@@ -1,7 +1,7 @@
 body {
   width: auto;
   height: 100%;
-  background-color: #21244de3;
+  background-color: #21244d;
   color: white;
   margin: 0;
 }
@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 5px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -49,7 +49,7 @@ body {
   color: chocolate;
   transition: 1s;
   border-radius: 10%;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   font-family: 'Roboto Slab', serif;
@@ -122,7 +122,7 @@ margin-left: 5px;
   color: white;
   transition: 1s;
   border-radius: 0.3em;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   color: white;
@@ -163,7 +163,7 @@ margin-left: 5px;
 
 .info-paragraph1,
 .info-paragraph2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   font-family: Verdana, sans-serif;
 }
@@ -207,7 +207,7 @@ margin-left: 5px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   background-color: #f4d9c3;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .dangky-name input[type=text] {
@@ -218,7 +218,7 @@ margin-left: 5px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   background-color: #f4d9c3;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .popup input[type=email] {
@@ -229,7 +229,7 @@ margin-left: 5px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   background-color: #f4d9c3;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .popup input[type=tel] {
@@ -240,7 +240,7 @@ margin-left: 5px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   background-color: #f4d9c3;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 
@@ -252,7 +252,7 @@ margin-left: 5px;
   border-radius: 4px;
   cursor: pointer;
   float: right;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -275,7 +275,7 @@ margin-left: 5px;
   cursor: pointer;
   background-color: #f1f3f4;
   border: none;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -313,14 +313,14 @@ margin-left: 5px;
 }
 
 .h-review {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Roboto Mono', monospace;
 }
 
 .p-review {
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
   font-family: 'Roboto Mono', monospace;
@@ -355,7 +355,7 @@ margin-left: 5px;
 
 .ladi-headline,
 .box-headline {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
@@ -394,7 +394,7 @@ margin-left: 5px;
 .ketqua {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 20px;
   margin-left: 50px;
 }
@@ -553,7 +553,7 @@ margin-left: 5px;
 .p-pr6,
 .p-pr7 {
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
 }
@@ -581,12 +581,9 @@ margin-left: 5px;
   font-weight: bold;
 }
 
-
-
-
 .slideshow-container {
   position: relative;
-  width: 100%;
+  width: 2112px;
   height: 700px;
   overflow: hidden;
   backdrop-filter: blur(10px);
@@ -603,7 +600,7 @@ margin-left: 5px;
   text-align: center;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -622,7 +619,7 @@ margin-left: 5px;
   transform: translateY(-50%);
   padding: 10px;
   color: white;
-  font-size:px;
+  font-size: 100px;
   cursor: pointer;
   transition: opacity 0.3s;
 }
@@ -638,8 +635,6 @@ margin-left: 5px;
 .next {
   right: 10px;
 }
-
-
 
 [data-aos] {
   opacity: 0;
