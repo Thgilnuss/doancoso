@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function() {
+  var menu = document.querySelector('.menu');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+      menu.classList.add('menu-white-bg');
+  } else {
+      menu.classList.remove('menu-white-bg');
+  }
+});
+
 const button = document.querySelector('.dangky');
 const button1 = document.querySelector('.thamgia');
 const formPopup = document.querySelector('.form');
@@ -153,3 +164,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
