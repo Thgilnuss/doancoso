@@ -1,11 +1,13 @@
 body {
   width: auto;
-  height: auto;
+  height: 100%;
   background-color: #21244d;
   color: white;
+  margin: 0;
 }
 
 .menu {
+  position: fixed;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,7 @@ body {
   border-bottom: 5px solid #2d2de9;
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
-  width: calc(100% - 30px);
+  width: 100%;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   transition: background-color 0.3s ease;
