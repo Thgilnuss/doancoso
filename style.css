@@ -86,6 +86,13 @@ body {
   margin-top: 100px;
 }
 
+.img-logo{
+  border-radius: 10px;
+  height: 150px; 
+  width: 146.2px;
+  padding-bottom: 50px;
+}
+
 .info-img-background {
   margin: auto;
   height: 247px;
