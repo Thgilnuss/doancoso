@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-abc123..." crossorigin="anonymous" />
     <title>Sáng tạo phần mềm - 2023</title>
 </head>
 
@@ -35,8 +37,8 @@
     </div>
     <br>
     <br>
-    <div>
-        <div class="info" data-aos="fade-down">
+    <div class="info">
+        <div class="div-info" data-aos="fade-down">
             <div class="info-img">
                 <img class="info-img-background" src="logo.png" alt="">
             </div>
@@ -49,11 +51,11 @@
             <br>
             <br>
             <br>
-        </div>
-        <div class="div-thamgia">
-            <button class="thamgia">
-                Tham gia ngay
-            </button>
+            <div class="div-thamgia">
+                <button class="thamgia">
+                    Tham gia ngay
+                </button>
+            </div>
         </div>
     </div>
     <div class="form">
@@ -325,11 +327,34 @@
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </section>
 
-
-
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Về chúng tôi</h4>
+                <p>Chúng tôi là nhóm sinh viên đang thực hiện đồ án có tên là <br> "Thiết kế web cho cuộc thi sáng tạo
+                    phần mềm". <br>Chúng tôi tập trung vào việc phát triển một trang web đẹp <br> và chức năng để giới
+                    thiệu về cuộc thi <br> nhằm thu hút sự quan tâm của các thí sinh và khán giả.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <p>1 Phù Đổng Thiên Vương - P8 - TP Đà Lạt</p>
+                <p>email@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-column">
+                <h4>Theo dõi chúng tôi</h4>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CTK45B - Đồ án cơ sở. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

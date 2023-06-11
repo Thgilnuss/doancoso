@@ -158,25 +158,29 @@ rule.addEventListener('click', () => {
 });
 
 let slideIndex = 0;
-showSlide(slideIndex);
-
-function changeSlide(n) {
-  showSlide(slideIndex += n);
-}
+const slides = document.getElementsByClassName("slide");
 
 function showSlide(n) {
-  const slides = document.getElementsByClassName("slide");
-  
-  if (n >= slides.length) {
-    slideIndex = 0;
-  } else if (n < 0) {
+  if (n < 0) {
     slideIndex = slides.length - 1;
+  } else if (n >= slides.length) {
+    slideIndex = 0;
   }
-  
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  
+
   slides[slideIndex].style.display = "block";
+  slideIndex++;
 }
 
+function changeSlide(n) {
+  showSlide(slideIndex + n);
+}
+
+setInterval(() => {
+  showSlide(slideIndex);
+}, 7000);
+
+showSlide(slideIndex);
