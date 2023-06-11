@@ -180,7 +180,6 @@ margin-left: 5px;
   background-color: rgba(0, 0, 0, 0.4);
   color: #0d123c;
   font-family: 'Roboto Slab', serif;
-  font-weight: bold;
 }
 
 .popup form {
@@ -352,7 +351,6 @@ margin-left: 5px;
   color: white;
   transition: transform 0.3s ease;
   font-family: 'Roboto Slab', serif;
-  font-weight: bold;
 }
 
 .ladi-headline,
@@ -465,7 +463,6 @@ margin-left: 5px;
 
 .thele-container {
   font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
   border-bottom: #888 1px solid;
   height: 850px;
 }
@@ -485,7 +482,6 @@ margin-left: 5px;
 
 .div-prize {
   font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -608,6 +604,7 @@ margin-left: 5px;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
   font-size: 35px;
+  font-weight: bold;
 }
 
 .slide img {
