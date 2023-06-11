@@ -586,7 +586,7 @@ margin-left: 5px;
 
 .slideshow-container {
   position: relative;
-  width: 2112px;
+  width: 100%;
   height: 700px;
   overflow: hidden;
   backdrop-filter: blur(10px);
