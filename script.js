@@ -1,3 +1,5 @@
+AOS.init();
+
 window.addEventListener('scroll', function() {
   var menu = document.querySelector('.menu');
   var scrollPosition = window.scrollY;
@@ -136,32 +138,50 @@ document.addEventListener("DOMContentLoaded", function () {
   sp2.addEventListener("click", handleClick);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var gioithieuBtn = document.querySelector(".gioithieu");
-  var ruleBtn = document.querySelector(".rule");
-  var giaithuongBtn = document.querySelector(".giaithuong");
+const gioiThieu = document.querySelector('.gioithieu');
+const rule = document.querySelector('.rule');
+const giaiThuong = document.querySelector('.giaithuong');
+const reviewContainer = document.querySelector('.review-container');
+const theleContainer = document.querySelector('.thele-container');
+const prizeContainer = document.querySelector('.prize-container');
 
-  var reviewContainer = document.getElementById("review-container");
-  var prizeContainer = document.getElementById("thele-container");
-  var theleContainer = document.getElementById("prize-container");
-
-  gioithieuBtn.addEventListener("click", function() {
-    scrollToElement(reviewContainer);
-  });
-
-  ruleBtn.addEventListener("click", function() {
-    scrollToElement(theleContainer);
-  });
-
-  giaithuongBtn.addEventListener("click", function() {
-    scrollToElement(prizeContainer);
-  });
-
-  function scrollToElement(element) {
-    window.scrollTo({
-      behavior: "smooth",
-      top: element.offsetTop
-    });
-  }
+gioiThieu.addEventListener('click', () => {
+  reviewContainer.scrollIntoView({ behavior: 'smooth' });
 });
+
+giaiThuong.addEventListener('click', () => {
+  theleContainer.scrollIntoView({ behavior: 'smooth' });
+});
+
+rule.addEventListener('click', () => {
+  prizeContainer.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
+
+
+
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("slide");
+  
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex].style.display = "block";
+}
 
