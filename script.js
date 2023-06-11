@@ -1,5 +1,5 @@
-AOS.init();
-
+AOS.init()
+src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js";
 window.addEventListener('scroll', function() {
   var menu = document.querySelector('.menu');
   var scrollPosition = window.scrollY;
@@ -156,11 +156,6 @@ giaiThuong.addEventListener('click', () => {
 rule.addEventListener('click', () => {
   prizeContainer.scrollIntoView({ behavior: 'smooth' });
 });
-
-
-
-
-
 
 let slideIndex = 0;
 showSlide(slideIndex);
