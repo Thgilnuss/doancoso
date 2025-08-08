@@ -1,5 +1,4 @@
-AOS.init()
-src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js";
+AOS.init();
 window.addEventListener('scroll', function() {
   var menu = document.querySelector('.menu');
   var scrollPosition = window.scrollY;
@@ -156,6 +155,29 @@ giaiThuong.addEventListener('click', () => {
 rule.addEventListener('click', () => {
   prizeContainer.scrollIntoView({ behavior: 'smooth' });
 });
+
+const sections = [
+  { element: reviewContainer, menu: gioiThieu },
+  { element: prizeContainer, menu: rule },
+  { element: theleContainer, menu: giaiThuong },
+];
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sections.forEach((s) => s.menu.classList.remove('active'));
+        const match = sections.find((s) => s.element === entry.target);
+        if (match) {
+          match.menu.classList.add('active');
+        }
+      }
+    });
+  },
+  { threshold: 0.6 }
+);
+
+sections.forEach((s) => observer.observe(s.element));
 
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
